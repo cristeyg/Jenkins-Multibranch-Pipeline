@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('One') {
             steps {
-                sh echo 'Step one'
+                echo 'Step one'
             }
         }
         stage('Two') {
             steps {
-                sh echo 'Step Two'
+                echo 'Step Two'
             }
         }
         stage('Third') {
             steps {
-                sh echo 'Step Three'
+                echo 'Step Three'
             }
         }
     }
