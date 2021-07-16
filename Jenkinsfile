@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Second') {
             when {
-                EXECUTE=="True"
+                expression { EXECUTE=="True"}
                 }
             steps {
                 script{
@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Third') {
             when {
-                EXECUTE=="False"
+                expression { EXECUTE=="False"}
             }
             steps {
                 echo 'Step Three'
